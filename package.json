@@ -1,0 +1,23 @@
+{
+  "name": "intercom",
+  "version": "1.0.0",
+  "description": "Intercom - A fundmantally new way to talk to your customers",
+  "main": "index.js",
+  "author": "Sean Healy",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.intercom.io/admins/sign_in",
+    "serviceName": "Intercom",
+    "message": "We enable businesses to offer customer service through mobile messengers.",
+    "popup": [],
+    "hasNotificationSound": true,
+    "hasIndirectMessages": false,
+    "hasTeamID": false,
+    "customURL": false,
+    "hostedOnly": false,
+    "webviewOptions": {
+      "disablewebsecurity": ""
+    },
+    "openDevTools": false
+  }
+}
