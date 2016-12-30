@@ -2,16 +2,12 @@ const path = require('path');
 
 module.exports = (Franz, options) => {
   const getMessages = () => {
-    // get unread messages
-    const updates = document.getElementById('franz').getAttribute('data-unread');
-
     // get conversations in 'My Inbox'
-    const inbox = document.getElementById('franz').getAttribute('data-inbox');
+    const inbox = document.getElementsByClassName("left-nav__icon-content o__conversations")[0].innerText;
 
     // set Franz badge
-    // updates => active unread count
-    // inbox => passive unread count
-    Franz.setBadge(updates, inbox);
+    // inbox =>  unread count
+    Franz.setBadge(inbox);
   };
 
   // inject franz.css stylesheet
